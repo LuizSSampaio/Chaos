@@ -4,7 +4,10 @@
 
 #include <iostream>
 
+#include <Test.h>
+
 int main() {
     std::cout << "Hello, SandBox!" << std::endl;
+    Engine::Print();
     return 0;
 }
