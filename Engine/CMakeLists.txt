@@ -10,3 +10,4 @@ add_library(Engine
         src/Chaos/EntryPoint.h)
 
 target_include_directories(Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/spdlog/include)
