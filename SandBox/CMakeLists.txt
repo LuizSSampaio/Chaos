@@ -7,6 +7,6 @@ set(SAND_BOX_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory(../Engine ${SAND_BOX_BINARY_DIR}/Engine)
 
-add_executable(SandBox src/Application.cpp)
+add_executable(SandBox src/SandBoxApp.cpp)
 
 target_link_libraries(SandBox PRIVATE Engine)

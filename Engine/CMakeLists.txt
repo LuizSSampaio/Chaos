@@ -4,7 +4,9 @@ project(Engine)
 set(CMAKE_CXX_STANDARD 23)
 
 add_library(Engine
-        src/Test.cpp
-        src/Test.h)
+        src/Chaos/Application.cpp
+        src/Chaos/Application.h
+        src/Chaos.h
+        src/Chaos/EntryPoint.h)
 
 target_include_directories(Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
