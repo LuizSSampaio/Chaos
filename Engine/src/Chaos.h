@@ -7,8 +7,11 @@
 #ifndef CHAOS_H
 #define CHAOS_H
 
+// For use by Chaos applications
 #include "Chaos/Application.h"
+#include "Chaos/Log.h"
 
+// Entry Point
 #include "Chaos/EntryPoint.h"
 
 #endif //CHAOS_H

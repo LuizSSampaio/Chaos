@@ -8,13 +8,15 @@
 extern Chaos::Application* Chaos::CreateApplication();
 
 int main(int argc, char** argv) {
-    std::cout << "Chaos Engine STARTUP" << std::endl;
+    Chaos::Log::Init();
+
+    CHAOS_CORE_INFO("Initializing");
     const auto app = Chaos::CreateApplication();
 
-    std::cout << "Chaos Engine RUNTIME" << std::endl;
+    CHAOS_CORE_INFO("Running");
     app->Run();
 
-    std::cout << "Chaos Engine SHUTDOWN" << std::endl;
+    CHAOS_CORE_INFO("Shutting down");
     delete app;
     return 0;
 }
