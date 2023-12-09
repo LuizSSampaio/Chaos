@@ -9,7 +9,16 @@ add_library(Engine
         src/Chaos.h
         src/Chaos/EntryPoint.h
         src/Chaos/Log.cpp
-        src/Chaos/Log.h)
+        src/Chaos/Log.h
+        src/Chaos/Events/Event.h
+        src/Chaos/Core.h
+        src/Chaos/Events/ApplicationEvent.h
+        src/Chaos/Events/KeyEvent.h
+        src/Chaos/Events/MouseEvent.h
+        src/chpch.cpp)
 
 target_include_directories(Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_include_directories(Engine PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/spdlog/include)
+
+# Add precompiled header
+target_precompile_headers(Engine PRIVATE src/chpch.h)

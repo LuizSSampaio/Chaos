@@ -5,6 +5,8 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
+#include "Events/Event.h"
+
 namespace Chaos {
     class Application {
     public:
