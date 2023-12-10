@@ -5,6 +5,7 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
+#include "Window.h"
 #include "Events/Event.h"
 
 namespace Chaos {
@@ -14,6 +15,9 @@ namespace Chaos {
         virtual ~Application();
 
         void Run();
+    private:
+        std::unique_ptr<Window> m_Window;
+        bool m_Running = true;
     };
 
     // To be defined in client

@@ -17,4 +17,6 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Chaos/Log.h"
+
 #endif //CHPCH_H
